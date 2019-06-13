@@ -352,9 +352,11 @@ input:checked ~ .logo {
   width: 100%; }
 
 input:checked ~ .main-menu {
-  display: -ms-grid;
-  display: grid;
-  background: #CCC; }
+  display: block;
+  background: #6d5384; }
+  input:checked ~ .main-menu li {
+    width: 100%;
+    text-align: center; }
 
 @font-face {
   font-family: Gothem-black;
