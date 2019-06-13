@@ -353,7 +353,7 @@ input:checked ~ .logo {
 
 input:checked ~ .main-menu {
   display: block;
-  background: #6d5384; }
+  background: #4c2f65; }
   input:checked ~ .main-menu li {
     width: 100%;
     text-align: center; }
