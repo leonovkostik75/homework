@@ -59,7 +59,7 @@ input + label {
     
     input:checked ~.main-menu {
       display: block;
-      background: $btn-shadow;
+      background: $dots;
       li {
         width: 100%;
         text-align: center;
