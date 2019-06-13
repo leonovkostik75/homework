@@ -1,0 +1,82 @@
+
+
+#header {
+	&.container {
+		position: relative;
+	}
+}
+
+.header-content {
+	padding: 50px 15px;
+	position: absolute;
+	display: flex;	
+	top: 0;
+	left: 0;
+	right: 0;
+	justify-content: space-between;	
+	align-items: center;
+
+	@media screen and (max-width: 1024px) {
+		display: block;
+		
+		img {
+		display: flex;				
+		margin: 0 auto 20px;			
+		}		
+	}
+
+	@media screen and (max-width: 767px) {
+		display: block;		
+	}
+
+}
+
+
+
+.main-menu {	
+	list-style: none;
+	margin: 0 -5px;
+
+	@media screen and (max-width: 1024px) {		
+		padding-top: 10px;
+		display: flex;
+		justify-content: center;
+	}
+
+	@media screen and (max-width: 767px) {
+		display: none;		
+	}
+
+	& li {
+		padding: 0 5px;
+		display: inline-block;
+		margin-bottom: 10px;
+		}
+	& .active {
+		& a {
+			background-color: $yellow;	
+			position: relative;
+			transition: 1s;			
+			box-shadow: 0 3px 0 0 $btn-shadow;
+			&:after {
+				content: '';
+				position: absolute;
+				top: calc(100% - 3px);	
+				left: 50%;
+				width: 10px;
+				height: 10px;
+				background-color: $yellow;	
+				transform: rotate(45deg) translateX(-50%);
+				box-shadow: 3px 3px 0 0 $btn-shadow;
+				}	
+		}
+	}
+}
+
+.btn-primery {
+	&:hover {
+		background-color: $yellow;		
+		position: relative;
+		transition: 1s;
+		}
+}

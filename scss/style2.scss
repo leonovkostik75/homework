@@ -1,0 +1,134 @@
+@import "vars";
+@import "header";
+@import "slider";
+@import "content";
+@import "burgermenu";
+
+
+@font-face {
+	font-family: Gothem-black;
+	src: url(../fonts/Gotham-Black.otf);
+}
+
+@font-face {
+	font-family: Gothem-bold;
+	src: url(../fonts/Gotham-Bold.otf);
+}
+
+* {
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: #{$fz}px;
+}
+
+h1, h2, h4 {
+	text-transform: uppercase;
+}
+
+.wraper {
+	background-image: url(../images/fon.jpg);
+	background-repeat: repeat;	
+	background-size: cover;	
+	position: relative;
+	font-family: '';	
+}
+
+.container {
+	position: relative;
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+
+img {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 100%;
+}
+
+section {
+	margin-bottom: 20px;
+
+	@media screen and (max-width: 768px) {
+	margin-bottom: 10px;
+	}
+
+	@media screen and (max-width: 480px) {
+	margin-bottom: 0;
+	}
+}
+
+
+
+.btn {
+	width: 140px;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid $btn-border;
+	border-radius: 4px;
+	color: $white;
+	text-transform: uppercase;
+	font-size: #{18/$fz}em;
+	font-weight: 900;
+	text-decoration: none;
+	padding: 16px;
+	text-align: center;	
+		&:hover {
+		box-shadow: 0 3px 0 0 $btn-shadow;
+		}
+}
+
+
+
+.section {
+	font-family: "roboto";
+	text-align: center;
+	padding: 60px 0 20px;
+
+	@media screen and (max-width: 768px) {
+		padding: 40px 0 10px;
+	}
+
+	@media screen and (max-width: 480px) {
+		padding: 20px 0 0;
+	}
+}
+
+
+
+.footer-content {
+	padding: 50px 0 80px;
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
+	position: relative;
+	
+	@media screen and (max-width: 768px) {	
+		p {			
+		margin: 0 10px;
+		}		
+	}
+
+	@media screen and (max-width: 480px) {
+		flex-wrap: wrap;
+		p {
+			margin-bottom: 20px;
+		}
+	}
+
+	&:before {
+		content: "";	
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		height: 2px;
+		background-color: $bg;
+	}
+}
+
+

@@ -1,0 +1,131 @@
+
+
+#header {
+	&.container {
+		position: relative;
+	}
+}
+
+.header-content {
+	padding: 50px 15px;
+	position: absolute;
+	display: flex;	
+	top: 0;
+	left: 0;
+	right: 0;
+	justify-content: space-between;	
+	align-items: center;
+
+	@media screen and (max-width: 1024px) {
+		display: block;
+		
+		img {
+		display: flex;				
+		margin: 0 auto;			
+		}		
+	}
+
+}
+
+// .opener {
+// 	display: inline-block;
+// 		vertical-align: top;
+// 		height: 22px;
+
+// 	@media (min-width: 768px) {
+// 		display: none;
+// 	}
+
+// 	&:hover {
+// 		span {
+// 			height: 0;
+
+// 			&:before {
+// 				transform: rotate(45deg);
+// 				top: 10px;
+// 			}
+
+// 			&:after {
+// 				transform: rotate(-45deg);
+// 				top: 10px;
+// 			}
+// 		}
+
+
+// 	}
+
+// 	span {
+// 		display: inline-block;
+// 		vertical-align: top;
+// 		text-indent: -9999px;
+// 		height: 2px;
+// 		width: 30px;
+// 		background-color: $black;
+// 		position: relative;
+
+// 		&:before,
+// 	 	&:after {
+// 			content: "";
+// 			height: 2px;
+// 			width: 30px;
+// 			position: absolute;
+// 			top: 10px;
+// 			left: 0;
+// 			background-color: inherit;
+// 			transition: 0.3s ease-in-out;
+// 		}
+
+// 		&:after {
+// 			top: 20px;
+// 		}
+// 	}
+// }
+
+.main-menu {	
+	list-style: none;
+	margin: 0 -5px;
+
+	@media screen and (max-width: 1024px) {		
+		padding-top: 10px;
+		display: flex;
+		justify-content: center;
+	}
+
+	@media screen and (max-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	& li {
+		padding: 0 5px;
+		display: inline-block;
+		margin-bottom: 10px;
+		}
+	& .active {
+		& a {
+			background-color: $yellow;	
+			position: relative;
+			transition: 1s;			
+			box-shadow: 0 3px 0 0 $btn-shadow;
+			&:after {
+				content: '';
+				position: absolute;
+				top: calc(100% - 3px);	
+				left: 50%;
+				width: 10px;
+				height: 10px;
+				background-color: $yellow;	
+				transform: rotate(45deg) translateX(-50%);
+				box-shadow: 3px 3px 0 0 $btn-shadow;
+				}	
+		}
+	}
+}
+
+.btn-primery {
+	&:hover {
+		background-color: $yellow;		
+		position: relative;
+		transition: 1s;
+		}
+}
