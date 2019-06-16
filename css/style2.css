@@ -355,6 +355,8 @@ input:checked ~ .main-menu {
   input:checked ~ .main-menu li {
     width: 100%;
     text-align: center; }
+  input:checked ~ .main-menu li:last-child {
+    margin-bottom: 30px; }
 
 @font-face {
   font-family: Gothem-black;

@@ -63,7 +63,11 @@ input + label {
       li {
         width: 100%;
         text-align: center;
-      }      
+      } 
+
+      li:last-child {
+        margin-bottom: 30px;
+      }     
     }
 
 
