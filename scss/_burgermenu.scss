@@ -58,8 +58,9 @@ input + label {
 
     
     input:checked ~.main-menu {
-  transition: 1s;
-      
+      visibility: visible;
+      opacity: 1;
+
       display: block;
       background: $bg;
       li {

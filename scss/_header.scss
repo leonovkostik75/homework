@@ -49,10 +49,18 @@
 	}
 
 	@media screen and (max-width: 767px) {
-		display: none;				
+		display: block;
+		opacity: 0;
+		visibility: hidden;
+		transition: 1s;
+
+		li {
+			width: 100%;
+		text-align: center;
+		}				
 	}
 
-	& li {
+	& li {		
 		padding: 0 5px;
 		display: inline-block;
 		margin-bottom: 10px;		
@@ -79,7 +87,6 @@
 }
 
 .btn-primery {
-	transition: 1s;
 
 	&:hover {
 		background-color: $yellow;		
