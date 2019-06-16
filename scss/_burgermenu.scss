@@ -58,15 +58,17 @@ input + label {
 
     
     input:checked ~.main-menu {
+  transition: 1s;
+      
       display: block;
-      background: $bg;     
+      background: $bg;
       li {
         width: 100%;
-        text-align: center;
+        text-align: center;        
       } 
 
       li:last-child {
-        margin-bottom: 30px;
+        margin-bottom: 30px;        
       }     
     }
 
