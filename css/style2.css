@@ -19,10 +19,11 @@
   @media screen and (max-width: 1024px) {
     .header-content {
       display: block; }
+      .header-content .logo {
+        text-align: center; }
       .header-content img {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
+        display: inline-block;
+        text-align: center;
         margin: 0 auto 20px; } }
   @media screen and (max-width: 767px) {
     .header-content {
@@ -348,9 +349,6 @@ input:checked + label span:last-child {
   -ms-transform: rotate(-405deg);
   transform: rotate(-405deg); }
 
-input:checked ~ .logo {
-  width: 100%; }
-
 input:checked ~ .main-menu {
   display: block;
   background: #443255; }
@@ -370,7 +368,9 @@ input:checked ~ .main-menu {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
   font-size: 13px; }
 
 h1, h2, h4 {
